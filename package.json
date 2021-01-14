@@ -1,0 +1,16 @@
+{
+  "name": "runnerapp",
+  "version": "1.0.0",
+  "description": "a html5 running game.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "cocos2d-js",
+    "game",
+    "html5"
+  ],
+  "author": "",
+  "license": "ISC"
+}
