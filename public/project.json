@@ -1,6 +1,8 @@
 {
+    "width": 600,
+    "height": 300,
     "debugMode": 1,
-    "showFPS": true,
+    "showFPS": false,
     "frameRate": 60,
     "id": "gameCanvas",
     "renderMode": 0,
