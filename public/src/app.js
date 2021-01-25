@@ -16,32 +16,36 @@ var homeLayer = cc.Layer.extend({
         this.topScore = new cc.LabelTTF("最高分：0", "Impact", 18);
         this.topScore.setAnchorPoint(0, 0);
         this.topScore.setPosition(20, (winSize.height - 50));
-        this.topScore.setFontFillColor(cc.color("#23ACCA"));
+        this.topScore.setFontFillColor(cc.color("#555555"));
         this.addChild(this.topScore, 1);
 
         // 添加一个显示游戏名称的标签
         this.gameName = new cc.LabelTTF("恐 龙 酷 跑", "Impact", 36);
         this.gameName.setPosition(winSize.width / 2, (winSize.height / 2 + 50));
-        this.gameName.setFontFillColor(cc.color("#2030ff"));
+        this.gameName.setFontFillColor(cc.color("#555555"));
         this.addChild(this.gameName, 1);
 
         // 添加一个开始游戏的按钮
         this.startGame = new ccui.Button(g_resources[1], g_resources[2]);
         this.startGame.setPosition(winSize.width / 2, (winSize.height / 2 - 10));
         this.startGame.setTitleText("开始游戏");
-        this.startGame.addTouchEventListener(function (sender, type) {
-            console.log(type);
-        }, this);
+        this.startGame.addClickEventListener(function () {
+            var game_scene = new gameScene();
+            cc.director.pushScene(game_scene);
+        });
         this.addChild(this.startGame, 1);
         return true;
     }
 });
 
 var homeScene = cc.Scene.extend({
+    layer: null,
     onEnter: function () {
         this._super();
-        var layer = new homeLayer();
-        this.addChild(layer, 0);
-        layer.init();
+        if (!this.layer) {
+            this.layer = new homeLayer();
+            this.addChild(this.layer, 0);
+            this.layer.init();
+        }
     }
 });

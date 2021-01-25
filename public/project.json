@@ -1,6 +1,6 @@
 {
-    "width": 600,
-    "height": 300,
+    "width": 800,
+    "height": 400,
     "debugMode": 1,
     "showFPS": false,
     "frameRate": 60,
@@ -9,6 +9,7 @@
     "modules": ["cocos2d"],
     "jsList": [
         "./src/app.js",
-        "./src/resource.js"
+        "./src/resource.js",
+        "./src/game.js"
     ]
 }
