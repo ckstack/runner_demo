@@ -2,9 +2,11 @@ var gameLayer = cc.Layer.extend({
     topScore: null,
     winSize: null,
     land_layer: null,
+    cloud_layer: null,
     init: function () {
         this._super();
         this.winSize = cc.director.getWinSize();
+        cc.spriteFrameCache.addSpriteFrames(g_resources[3]);
         // 添加一个显示当前得分的标签
         this.topScore = new cc.LabelTTF("当前得分：0", "Impact", 18);
         this.topScore.setAnchorPoint(0, 0);
@@ -15,6 +17,10 @@ var gameLayer = cc.Layer.extend({
         this.land_layer = new landLayer();
         this.addChild(this.land_layer, 0);
         this.land_layer.init();
+        // 添加一个云背景图层
+        this.cloud_layer = new cloudLayer();
+        this.addChild(this.cloud_layer, 0);
+        this.cloud_layer.init();
     }
 });
 
