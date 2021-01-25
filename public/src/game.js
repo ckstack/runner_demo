@@ -1,16 +1,20 @@
 var gameLayer = cc.Layer.extend({
     topScore: null,
     winSize: null,
+    land_layer: null,
     init: function () {
         this._super();
         this.winSize = cc.director.getWinSize();
-
         // 添加一个显示当前得分的标签
         this.topScore = new cc.LabelTTF("当前得分：0", "Impact", 18);
         this.topScore.setAnchorPoint(0, 0);
         this.topScore.setPosition(20, (this.winSize.height - 50));
         this.topScore.setFontFillColor(cc.color("#555555"));
         this.addChild(this.topScore, 0);
+        // 添加一个地面图层
+        this.land_layer = new landLayer();
+        this.addChild(this.land_layer, 0);
+        this.land_layer.init();
     }
 });
 
