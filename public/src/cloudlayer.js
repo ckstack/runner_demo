@@ -1,8 +1,10 @@
 var cloudLayer = cc.Layer.extend({
     cloudSprite: null,
     layerSize: null,
+    gamelayer: null,
     init: function () {
         this._super();
+        this.gamelayer = this.getParent();
         this.layerSize = this.getContentSize();
         // 添加一个云图片精灵
         var cloudSpriteF = cc.spriteFrameCache.getSpriteFrame("game_cloud.png");
@@ -21,6 +23,10 @@ var cloudLayer = cc.Layer.extend({
         var pos = this.getPositionX();
         if (-pos > (this.layerSize.width + 100)) {
             this.setPosition(0, 0);
+        }
+        if (this.gamelayer.getIsGameOver()) {
+            this.stopAllActions();
+            this.unscheduleUpdate();
         }
     },
 

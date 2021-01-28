@@ -109,33 +109,63 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>sprite_bird.png</key>
+            <key>sprite_bird_1.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{182,78}</string>
+                <string>{91,78}</string>
                 <key>spriteSourceSize</key>
-                <string>{182,78}</string>
+                <string>{91,78}</string>
                 <key>textureRect</key>
-                <string>{{1,289},{182,78}}</string>
+                <string>{{1,289},{91,78}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>sprite_hunker.png</key>
+            <key>sprite_bird_2.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{236,60}</string>
+                <string>{91,78}</string>
                 <key>spriteSourceSize</key>
-                <string>{236,60}</string>
+                <string>{91,78}</string>
                 <key>textureRect</key>
-                <string>{{1,441},{236,60}}</string>
+                <string>{{92,289},{91,78}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sprite_hunker_1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{118,60}</string>
+                <key>spriteSourceSize</key>
+                <string>{118,60}</string>
+                <key>textureRect</key>
+                <string>{{1,441},{118,60}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sprite_hunker_2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{118,60}</string>
+                <key>spriteSourceSize</key>
+                <string>{118,60}</string>
+                <key>textureRect</key>
+                <string>{{119,441},{118,60}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -154,18 +184,33 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>sprite_normal.png</key>
+            <key>sprite_normal_1.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{176,94}</string>
+                <string>{88,94}</string>
                 <key>spriteSourceSize</key>
-                <string>{176,94}</string>
+                <string>{88,94}</string>
                 <key>textureRect</key>
-                <string>{{1,97},{176,94}}</string>
+                <string>{{1,97},{88,94}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sprite_normal_2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{88,94}</string>
+                <key>spriteSourceSize</key>
+                <string>{88,94}</string>
+                <key>textureRect</key>
+                <string>{{89,97},{88,94}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>

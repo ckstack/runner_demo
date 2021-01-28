@@ -12,6 +12,7 @@
         "./src/resource.js",
         "./src/game.js",
         "./src/landlayer.js",
-        "./src/cloudlayer.js"
+        "./src/cloudlayer.js",
+        "./src/playlayer.js"
     ]
 }
